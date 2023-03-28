@@ -1,19 +1,19 @@
-# Welcome to MkDocs
+# 主页
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<p align='center'>
+<img src='./pics/lzu.jpg' alt='兰州大学校徽' width='400' title='兰州大学'>
+</p>
 
-This is a test line.
+## 简介
+欢迎各位同学来到兰州大学飞跃手册! 此手册为学生自发收集建立, 旨在帮助学弟学妹们解答升学途中途中常见问题, 分享学长学姐们的申请经验. 欢迎大家分享此网址给更多更多兰州大学校友们, 让这本飞跃手册的内容充实起来! Go LZUer!
 
-## Commands
+## 投稿方式
+投稿方式目前有两种:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+1. 联系目前飞跃手册的负责人邮箱: [hrni1998@gmail.com](mailto:hrni1998@gmail.com), 或者xxxx(其他的负责人负责人的邮箱), 将自己的分享内容置于邮件附件, 负责人会帮忙处理好格式并上传.
 
-## Project layout
+2. 自行通过github上传.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## 提问方式
+
+## 致谢
