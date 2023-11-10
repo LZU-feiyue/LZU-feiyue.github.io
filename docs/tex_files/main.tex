@@ -1,0 +1,290 @@
+\documentclass[letterpaper,11pt]{article}
+
+%\usepackage[showframe]{geometry}
+\usepackage{ragged2e}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,      
+    urlcolor=blue
+    }
+\urlstyle{same}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeArticleHeading}[1]{
+    \vspace{-2pt}\item
+    #1
+    \vspace{-7pt}
+}
+
+\newcommand{\resumeAwardHeading}[2]{
+\vspace{-1pt}
+\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+\end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Your Name} \\ \vspace{1pt}
+
+    % RESEARCH FOCUS
+    \textbf{Research Background:} BACKGROUND\_1 $\vert$ BACKGROUND\_2 $\vert$ BACKGROUND\_3 \\ \vspace{1pt}
+    \textbf{Research Interests:} INTEREST\_1 $\vert$ INTEREST\_2\\ \vspace{2pt}
+
+    % EMAIL
+    \small  \href{mailto:YOUR_EMAIL@xxxx.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{YOUR\_EMAIL@xxxx.com}} ~ ~
+    % GITHUB (DISCARD THIS IF NOT NEEDED)
+    \href{https://github.com/YOUR_ID}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/YOUR\_ID}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lanzhou University}{MON. YEAR -- MON. YEAR}
+      % e.g. Bachelor of Science in Physics
+      {\underline{Bachelor of YOUR\_FIELD in YOUR\_MAJOR}}{Lanzhou, China}
+      \vspace{2pt}
+      {\small {\newline{}\textbf{\underline{GPA:} x.xx/5.00 $\vert$ xx.xx/100.00 $\vert$ Ranked x/xxx in YOUR\_MAJOR $\vert$ Top x\%}}}
+      \vspace{-1pt}
+      \justifying{\footnotesize{\newline{}\textbf{\underline{Selected Courses:}} COURSE\_1 (xx), COURSE\_2 (xx), COURSE\_3 (xx), COURSE\_4 (xx), COURSE\_5 (xx), COURSE\_6 (xx), COURSE\_7 (xx), COURSE\_8 (xx).}}
+      % ADD AS MUCH COURSES AS YOUR LIKE
+
+    \resumeSubheading
+      {INSTITUTE\_2}{MON. YEAR -- MON. YEAR}
+      {\underline{PROGRAM\_NAME}}{CITY, COUNTRY}
+      \vspace{2pt}
+      {\small {\newline{}\textbf{\underline{GPA:} x.xx/x.xx $\vert$} ranking not available}}
+      \vspace{-1pt}
+      \justifying{\footnotesize{\newline{}\textbf{\underline{Selected Courses:}} COURSE\_1 (xx), COURSE\_2 (xx), COURSE\_3 (xx), COURSE\_4 (xx), COURSE\_5 (xx), COURSE\_6 (xx), COURSE\_7 (xx), COURSE\_8 (xx).}}
+  \resumeSubHeadingListEnd
+
+%-----------ARTICLE & THESIS-----------
+% This is the place to put your big projects, such as your bachelor thesis, master thesis, research assistant project etc.
+
+\section{ARTICLE \& THESIS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {[1] TITLE\_OF\_YOUR\_BACHELOR\_THESIS}{MON. YEAR -- MON. YEAR}
+      {~ ~ ~\textbf{Instructor:} \href{https:LINK_TO_YOUR_INSTRUCTOR_WEBPAGE}{Prof. Xxxx Xxxx}}{Lanzhou, China}
+      \resumeItemListStart
+        \resumeItem{DETAILED\_DESCRIPTION\_OF\_WHAT\_YOU\_DID\_1}
+        \resumeItem{DETAILED\_DESCRIPTION\_OF\_WHAT\_YOU\_DID\_2}
+        \resumeItem{DETAILED\_DESCRIPTION\_OF\_WHAT\_YOU\_DID\_3}
+        \resumeItem{Thesis available at \href{https:LINK_TO_YOUR_THESIS}{WEBPAGE\_NAME}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {[2] TITLE\_OF\_YOUR\_MASTER\_THESIS}{MON. YEAR -- MON. YEAR}
+      {~ ~ ~\textbf{Instructor:} \href{https:LINK_TO_YOUR_INSTRUCTOR_WEBPAGE}{Prof. Xxxx Xxxx}}{CITY, COUNTRY}
+      \resumeItemListStart
+        \resumeItem{DETAILED\_DESCRIPTION\_OF\_WHAT\_YOU\_DID\_1}
+        \resumeItem{DETAILED\_DESCRIPTION\_OF\_WHAT\_YOU\_DID\_2}
+        \resumeItem{DETAILED\_DESCRIPTION\_OF\_WHAT\_YOU\_DID\_3}
+        \resumeItem{Thesis available at \href{https:LINK_TO_YOUR_INSTRUCTOR_WEBPAGE}{WEBPAGE\_NAME}.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%\vspace{-16pt}
+
+
+%----------- RESEARCH PRACTICES -----------
+% This is the place to put your small projects, such as semester projects, summer projects etc.
+
+\section{RESEARCH PRACTICES}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {[1] TITLE\_OF\_YOUR\_PROJECT}{MON. YEAR -- MON. YEAR}
+      {~ ~ ~\textbf{Instructor:} \href{https:LINK_TO_YOUR_INSTRUCTOR_WEBPAGE}{Prof. Xxxx Xxxx}}{CITY, COUNTRY}
+      \resumeItemListStart
+        \resumeItem{DETAILED\_DESCRIPTION\_OF\_WHAT\_YOU\_DID\_1}
+        \resumeItem{DETAILED\_DESCRIPTION\_OF\_WHAT\_YOU\_DID\_2}
+        \resumeItem{Project report available clicking \href{https:LINK_TO_YOUR_PROJECT_REPORT}{here}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {[2] TITLE\_OF\_YOUR\_PROJECT}{MON. YEAR -- MON. YEAR}
+      {~ ~ ~\textbf{Instructor:} \href{https:LINK_TO_YOUR_INSTRUCTOR_WEBPAGE}{Prof. Xxxx Xxxx}}{CITY, COUNTRY}
+      \resumeItemListStart
+        \resumeItem{DETAILED\_DESCRIPTION\_OF\_WHAT\_YOU\_DID\_1}
+        \resumeItem{DETAILED\_DESCRIPTION\_OF\_WHAT\_YOU\_DID\_2}
+        \resumeItem{Project report available clicking \href{https:LINK_TO_YOUR_PROJECT_REPORT}{here}.}
+      \resumeItemListEnd
+    %\vspace{3pt}
+  \resumeSubHeadingListEnd
+
+%----------- AWARDS -----------
+
+\section{AWARDS}
+
+\resumeAwardHeading{~ ~\textbf{NAME\_OF\_AWARD\_1}}{MON. YEAR}
+\resumeAwardHeading{~ ~\textbf{NAME\_OF\_AWARD\_2} $\vert$ DESCRIPTION}{MON. YEAR}
+\resumeAwardHeading{~ ~\textbf{NAME\_OF\_AWARD\_3}}{MON. YEAR}
+\resumeAwardHeading{~ ~\textbf{NAME\_OF\_AWARD\_4} $\vert$ DESCRIPTION}{MON. YEAR}
+\resumeAwardHeading{~ ~\textbf{NAME\_OF\_AWARD\_5}}{MON. YEAR}
+\resumeAwardHeading{~ ~\textbf{NAME\_OF\_AWARD\_6} $\vert$ DESCRIPTION}{MON. YEAR}
+
+\vspace{-16pt}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: Python, \LaTeX, OTHER\_LANGUAGES} \\
+     \textbf{Frameworks}{: Linux, GitHub, HPC Clusters, OTHER\_FRAMEWORKS} \\
+     \textbf{Scientific Software}{: OriginLab, OVITO, VASP, OTHER\_SCIENTIFIC\_SOFTWARE} \\
+    }}
+ \end{itemize}
+\vspace{-16pt}
+
+
+%------ STANDARDIZED TESTS -------
+\section{STANDARDIZED TESTS}
+    \vspace{-1pt}
+    \resumeAwardHeading{~ ~\textbf{TOEFL iBT ~ \emph{(SCORE)}}}{DAY MON. YEAR}
+    \vspace{-12pt}
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Reading: xx/30
+                \item Listening: xx/30
+                \item Speaking: xx/30
+                \item Writing: xx/30
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+        \vspace{12pt}
+    
+    \resumeAwardHeading{~ ~\textbf{GRE General ~ \emph{(REASONING\_SCORE + WRITING\_SCORE)}}}{DAY MON. YEAR}
+    \vspace{-12pt}
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Verbal R.: xxx/170
+                \item Quantitative R.: xxx/170
+                \item A.W.: x.x/6.0
+            \end{itemize}
+        \end{multicols}
+        %\vspace*{2.0\multicolsep}
+        \vspace{-2pt}
+
+
+
+%----------- EXTRACURRICULAR ---------------
+\section{LEADERSHIP / EXTRACURRICULAR}
+    \resumeSubHeadingListStart
+        \resumeSubheading{\small ACTIVITY\_NAME / ASSOCIATION\_NAME}{MON. YEAR -- MON. YEAR}{YOUR\_ROLE}{PLACE}
+        \vspace{-4pt}
+        \resumeSubheading{\small ACTIVITY\_NAME / ASSOCIATION\_NAME}{MON. YEAR -- MON. YEAR}{YOUR\_ROLE}{PLACE}
+        \vspace{-4pt}
+        \resumeSubheading{\small ACTIVITY\_NAME / ASSOCIATION\_NAME}{MON. YEAR -- MON. YEAR}{YOUR\_ROLE}{PLACE}
+    \resumeSubHeadingListEnd
+
+\end{document}
