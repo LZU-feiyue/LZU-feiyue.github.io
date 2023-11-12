@@ -5,6 +5,7 @@ theme:
 nav:
   - 主页: 'index.md'
   - CV模版: 'CV.md'
+  - 分专业去向: 'major.md'
   - 出国出境: 'abroad.md'
   - 保研: 'baoyan.md'
   - 考研: 'kaoyan.md'
