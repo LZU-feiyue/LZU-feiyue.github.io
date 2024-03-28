@@ -1,6 +1,7 @@
 # 出国出境
 
 ## 美国
+- [宋昀泰 - 20级 - UIUC](./general/宋昀泰.md)
 
 ## 加拿大
 
@@ -14,7 +15,7 @@
 
 ## 德国
 
-- [宋睿宇 - 19级 - 土木工程与力学学院](./general/Ruiyu_Song.md)
+- [宋睿宇 - 19级 - TUM](./general/Ruiyu_Song.md)
 
 ## 法国
 
